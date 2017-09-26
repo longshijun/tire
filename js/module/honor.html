@@ -1,0 +1,97 @@
+
+<style>
+    #index_cus_title {
+        clear: both;
+        margin: 40px auto 0;
+        width: 1200px;
+        height: 36px;
+        line-height: 36px;
+        border-bottom: 2px solid #D4D6D6;
+    }
+    #index_cus_title img {
+        float: left;
+        width: 271px;
+        height: 36px;
+    }
+    #index_honor {
+        margin: 0 auto;
+        min-height: 500px;
+        width: 1200px;
+    }
+    #index_honor ul {
+        width: 1200px;
+        overflow: hidden;
+    }
+    #index_honor li {
+        float: left;
+        width: 300px;
+        margin: 40px 0 44px;
+        text-align: center;
+    }
+    #index_honor li img {
+        width: 150px;
+        transition: all 0.5s;
+    }
+    #index_honor li img:hover{
+        width: 160px;
+    }
+    #pro_content {
+        margin: 10px auto;
+        width: 926px;
+        line-height: 30px;
+    }
+    .btn-link {
+        color: #58666e;
+        background: white;
+    }
+    .btn {
+        font-weight: 500;
+        border-radius: 2px;
+        outline: 0!important;
+    }
+    .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
+        border-color: transparent;
+        color:blue;
+    }
+</style>
+
+<div ng-init="honorType='common'">
+    <div id="index_cus_title"><img src="img/index_07.fw.png"></div>
+    <div  ng-show="honorType =='common'" id="index_honor">
+        <ul>
+            <li ng-click="honorType='jianyan'"><a ><img src="img/honor1.png" width="234"></a></li>
+            <li ng-click="honorType='zhengdi'"><a ><img src="img/honor2.png" width="234"></a></li>
+            <li ng-click="honorType='shuiwu'"><a ><img src="img/honor3.png" width="234"></a></li>
+            <li ng-click="honorType='yingye'"><a ><img src="img/honor4.png" width="234"></a></li>
+        </ul>
+    </div>
+    <div  ng-show="honorType =='jianyan'" id="pro_content">
+        <button ng-click="honorType='common'" class="btn btn-link"><b style="color: blue">&lt;&lt;返回</b></button>
+        <p style="width:100%; text-align:center; font-size:30px; padding:5px 0; color:darkgreen;">检验报告</p>
+        <p style="text-align: center;"><img src="img/1465891880810675.png" title="1465891880810675.png" alt="图片1.png"></p>
+        <p style="text-align: center;"><img src="img/1465891914302126.png" style="" title="1465891914302126.png"></p>
+        <p style="text-align: center;"><img src="img/1465891914465173.png" style="" title="1465891914465173.png"></p>
+        <p style="text-align: center;"><img src="img/1465891914263956.png" style="" title="1465891914263956.png"></p>
+        <p style="text-align: center;"><img src="img/1465891914840324.png" style="" title="1465891914840324.png"></p>
+        <p style="text-align: center;"><img src="img/1465891915114787.png" title="1465891915114787.png"></p><p><br></p>
+        <p style="text-align: center;"><img src="img/1465891916529032.png" style="" title="1465891916529032.png"></p><p style="text-align: center;"><br></p><p>
+    </p></div>
+
+    <div ng-show="honorType =='zhengdi'" id="pro_content">
+        <button ng-click="honorType='common'" class="btn btn-link"><b style="color: blue">&lt;&lt;返回</b></button>
+        <p style="width:100%; text-align:center; font-size:30px; padding:5px 0; color:darkgreen;">税务登记证地税</p>
+        <p style="text-align: center;"><img src="img/1465788389123385.jpg" title="1465788389123385.jpg" alt="税务登记证地税.jpg" width="782" height="535" style="width: 782px; height: 535px;"></p><p>
+    </p></div>
+
+    <div  ng-show="honorType =='shuiwu'" id="pro_content">
+        <button ng-click="honorType='common'" class="btn btn-link"><b style="color: blue">&lt;&lt;返回</b></button>
+        <p style="width:100%; text-align:center; font-size:30px; padding:5px 0; color:darkgreen;">税务登记证</p>
+        <p style="text-align: center;"><img src="img/1465788389123385.jpg" title="1465788389123385.jpg" alt="税务登记证地税.jpg" width="782" height="535" style="width: 782px; height: 535px;"></p><p>
+    </p></div>
+
+    <div  ng-show="honorType =='yingye'" id="pro_content">
+        <button ng-click="honorType='common'" class="btn btn-link"><b style="color: blue">&lt;&lt;返回</b></button>
+        <p style="width:100%; text-align:center; font-size:30px; padding:5px 0; color:darkgreen;">营业执照</p>
+        <p style="text-align: center;"><img src="img/1465788389123385.jpg" title="1465788389123385.jpg" alt="税务登记证地税.jpg" width="782" height="535" style="width: 782px; height: 535px;"></p><p>
+    </p></div>
+</div>

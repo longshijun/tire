@@ -1,0 +1,31 @@
+
+
+/*index.html*/
+
+
+body{
+    background: #eff2f7;
+}
+.content{
+    width: 1200px;
+    margin: 0px auto;
+    background: white;
+    position: relative;
+    padding: 10px;
+}
+
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+}
+.clearfix {
+    zoom: 1;
+}

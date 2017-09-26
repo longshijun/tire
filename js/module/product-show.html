@@ -1,0 +1,174 @@
+<style>
+    #about_right {
+        float: left;
+        width: 890px;
+        margin-left: 33px;
+    }
+    #about_content {
+        width: 926px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 auto;
+        border-bottom: 1px solid #CFCFCF;
+    }
+    #about_content img {
+        float: left;
+        margin-left: 6px;
+        margin-top: 10px;
+    }
+    .about_title {
+        float: left;
+        padding-left: 15px;
+    }
+    .about_lable {
+        float: right;
+        padding-right: 15px;
+    }
+    #pro_content {
+        margin: 10px auto;
+        width: 926px;
+        line-height: 30px;
+    }
+    #pro_content img {
+        margin-left: 15px;
+    }
+    .pro-title {
+        margin: 20px 0;
+        font-size: 22px;
+        text-align: center;
+    }
+    .mycolor{
+        color:#44aa94;
+    }
+    .back-button{
+        color:#44aa94;
+    }
+    .back-button:hover{
+        cursor: pointer;
+    }
+
+</style>
+<div ng-init="productType='common'" id="index_pro">
+    <div id="index_pro_l">
+        <div  ng-click="productType='common' " id="index_pro_l_t"><span class="withe" style="margin-left:20px;">产品分类</span><span class="withe t16">/</span></div>
+        <ul id="index_pro_list">
+
+            <li  ng-click="productType='gongjiao' ">
+                <a ng-class="{'mycolor': productType == 'gongjiao' }" >
+                    <img src="img/point_02.fw.png" width="23" height="21">专业公交车轮胎翻新加工</a>
+            </li>
+            <li  ng-click="productType= 'huoche'" ><a ng-class="{'mycolor': productType == 'huoche' }" >
+                <img src="img/point_02.fw.png" width="23" height="21">专业货柜车轮胎翻新加工</a>
+            </li>
+            <li ng-click="productType= 'zhouzhuan'" >
+                <a  ng-class="{'mycolor': productType == 'zhouzhuan' }">
+                    <img src="img/point_02.fw.png" width="23" height="21">专业码头内周转车轮胎翻新加工
+                </a>
+            </li>
+            <li ng-click="productType= 'yunshu'">
+                <a  ng-class="{'mycolor': productType == 'yunshu' }">
+                    <img src="img/point_02.fw.png" width="23" height="21">专业运输车队轮胎翻新加工
+                </a>
+            </li>
+            <li ng-click="productType= 'chache'">
+                <a  ng-class="{'mycolor': productType == 'chache' }">
+                    <img src="img/point_02.fw.png" width="23" height="21">专业叉车、堆高机轮胎翻新加工</a>
+            </li>
+            <li ng-click="productType= 'shachang'">
+                <a ng-class="{'mycolor': productType == 'shachang' }" >
+                    <img src="img/point_02.fw.png" width="23" height="21">工地-沙场-石场铲车轮胎翻新加工
+                </a>
+            </li>
+
+            <li ng-click="productType= 'feiji'"><a ng-class="{'mycolor': productType == 'feiji' }" ><img src="img/point_02.fw.png" width="23" height="21">专业飞机场地勤车轮胎翻新加工</a></li>
+
+            <li ng-click="productType= 'huanwei'"><a ng-class="{'mycolor': productType == 'huanwei' }"   ng-class="{'mycolor': productType == 'gongjiao' }" >
+                <img src="img/point_02.fw.png" width="23" height="21">专业环卫车轮胎翻新加工</a>
+            </li>
+            <li ng-click="productType= 'buliu'"><a  ng-class="{'mycolor': productType == 'buliu' }">
+                <img src="img/point_02.fw.png" width="23" height="21">专业轮胎火补硫化加工</a>
+            </li>
+        </ul>
+    </div>
+    <div ng-show="productType=='common'" id="index_pro_r">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="img/product1.jpg" width="300" height="281">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img  src="img/product2.jpg" width="300" height="281">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/product3.jpg" width="300" height="281">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img  src="img/product4.jpg" width="300" height="281">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img  src="img/product4.jpg" width="300" height="281"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img  src="img/product5.jpg" width="300" height="281">
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <div   id="about_right">
+        <div  ng-show="productType!='common'" >
+            <div id="about_content"><img src="img/about_03.png" alt=""><span class="about_title">产品中心</span><span class="about_lable"><a href="#">首页</a> - 产品中心 - <span class="red">专业公交车轮胎翻新加工</span></span></div>
+            <div  style="margin:10px 0; font-size:18px; line-height:30px;"><a class="back-button" ng-click="back()">返回</a></div>
+            <a name="tz"></a>
+        </div>
+
+        <div ng-show="productType=='gongjiao'"  id="pro_content">
+         <p style="text-align:center"><span style=";font-family:Tahoma;font-size:21px"><span style="font-family:微软雅黑">专业公交车轮胎翻新加工</span></span></p><p><span style=";font-family:微软雅黑;font-size:21px">&nbsp;</span><span style=";font-family:微软雅黑;font-size:16px">&nbsp;&nbsp;<span style="font-family:微软雅黑">公交车的轮胎主要注重耐磨性，因为公交车经常刹车、加油启动、加上司机的心态问题，会多急刹和大油门启动，所以公交车的翻新轮胎要网耐磨性一定是最好的，才能为公交车司节省成本，公交车的轮胎往往注重排水性和导向性，鸿途轮胎翻新加工时会选用直线花纹看，当车辆行驶时会向前后直接挤压上去，从而影响其捉地力，减少安全隐患。直接花纹在行驶中以优异的导向功能，使其在行驶中对方向的把握是最好的。</span></span></p><p><span style=";font-family:微软雅黑;font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:微软雅黑">公交车由于多在路边行驶，所以再行驶中最容易擦到或撞到马路边的台阶。如果撞到或擦到，则轮胎会在相应的地方受伤而分层起鼓，甚至当场爆胎。就算没有爆胎，那条轮胎在翻新加工时，会因内空起鼓，而被挑除，不予翻新加工，直接成了废胎，对公司的成本也是一种极大的浪费。所以对公交车司机的驾驶安全教育也至关重要。</span></span></p><p><span style=";font-family:微软雅黑;font-size:16px">&nbsp;&nbsp;&nbsp;<span style="font-family:微软雅黑">公交车轮胎如果扎到螺丝，钉子或破洞在</span>5cm<span style="font-family:微软雅黑">内，我们鸿途轮胎翻新加工是可以给客户修补好的，也不另收费用，绝对不会有安全问题。</span></span></p><p><br></p><p><img src="img/gongjiao.jpg" style="width: 440px; height: 305px; float: left;" title="小榄车站案例" width="440" height="305" border="0" vspace="0" alt="小榄车站案例"></p><p><img src="img/gongjiao2.jpg" style="width: 431px; height: 305px; float: left;" title="专业公交车轮胎翻新加工" width="431" height="305" border="0" vspace="0" alt="专业公交车轮胎翻新加工"></p><p><br></p><p>
+        </p></div>
+
+
+        <div ng-show="productType=='huoche'" id="pro_content">
+            <p></p><p style="text-align:center"><span style=";font-family:微软雅黑;font-size:21px"><span style="font-family:微软雅黑">专业货柜车轮胎翻新</span></span></p><p><span style=";font-family:Tahoma;font-size:21px">&nbsp;</span><span style=";font-family:Tahoma;font-size:16px">&nbsp;</span><span style=";font-family:微软雅黑;font-size:16px"><span style="font-family:微软雅黑">针对货柜车我们会选用三线或者斜方块花纹，保证车辆在转弯掉头时不易把翻新轮胎的花纹边侧刮伤，轮胎在原地转动时减少摩擦力，利于转弯掉头，而不损伤胎面，也不用大力给油就可轻易转弯掉头。减少油费和轮胎的磨损，李为客户节省使用成本。</span></span></p><p><span style=";font-family:Tahoma;font-size:16px">&nbsp;&nbsp;</span><span style=";font-family:微软雅黑;font-size:16px"><span style="font-family:微软雅黑">如果跑长途上高速的货柜车，我们选用直线花纹，这样利于排水个导向性，让客户安全在高速路上更加安全。</span></span></p><p><span style=";font-family:Tahoma;font-size:16px">&nbsp;&nbsp;</span><span style=";font-family:微软雅黑;font-size:16px"><span style="font-family:微软雅黑">对于货柜车轮胎翻新加工时，有</span></span><span style=";font-family:Tahoma;font-size:16px">5cm</span><span style=";font-family:微软雅黑;font-size:16px"><span style="font-family:微软雅黑">以内多洞口，我们也会免费为客户加补片，让客户放心使用，为客户节省成本，减少废胎率，充分利用资源，利国利民，惠及子孙。</span></span></p><p style="text-align: center;"><img src="img/huoche4.jpg" style="width: 500px; height: 333px;" title="专业货柜车轮胎翻新" width="500" height="333" border="0" vspace="0" alt="专业货柜车轮胎翻新"></p><p style="text-align: center;"><img src="img/huoche1.jpg" style="width: 500px; height: 333px;" title="专业货柜车轮胎翻新" width="500" height="333" border="0" vspace="0" alt="专业货柜车轮胎翻新"></p><p style="text-align: center;"><img src="img/huoche2.jpg" style="width: 500px; height: 750px;" title="专业货柜车轮胎翻新" width="500" height="750" border="0" vspace="0" alt="专业货柜车轮胎翻新"></p><p style="text-align: center;"><img src="img/huoche2.jpg" style="width: 500px; height: 333px;" title="专业货柜车轮胎翻新" width="500" height="333" border="0" vspace="0" alt="专业货柜车轮胎翻新"></p><p><br></p><p>
+        </p></div>
+
+        <div ng-show="productType=='zhouzhuan'" id="pro_content">
+            <p></p><p style="text-align:center"><span style=";font-family:Tahoma;font-size:20px"><span style="font-family:微软雅黑"></span></span></p><p style="text-align:center"><strong><span style="font-size:29px;font-family:宋体">码头龙门吊防撞胶、缓冲胶</span></strong></p><p>&nbsp;</p><p style="text-indent:32px"><span style="font-size:21px;font-family:宋体">本公司用耐候，高弹性橡胶生产的码头龙门吊上天车两边的防撞胶，具有高耐候性，在</span><span style="font-size:21px">70</span><span style="font-size:21px;font-family:宋体">℃—零下</span><span style="font-size:21px">50</span><span style="font-size:21px;font-family: 宋体">℃均有优异的防撞缓冲性。压缩比非常高，能极好地缓冲天车来回撞击。本公司生产的龙门吊防撞胶为高弹性橡胶生产，比目前市面上用有孔海绵做的使用寿命可延长</span><span style="font-size:21px">3</span><span style="font-size:21px;font-family:宋体">倍以上，我们生产的是橡胶防撞胶不会裂开、撕破，而海绵做的使用久了就没有弹性了，也会一块一块裂开、掉下，最后失去防撞效果，影响天车运行安全。您使用本公司的码头龙门吊防撞胶可以节省成本、减少人工换胶的次数及危险度，可以更好的保护天车来回不会被撞击到，保障您的生产安全，同时也减少维修次数，提高工作效率。</span></p><p style="text-indent:32px"><br></p><p style="text-indent:32px"><span style="font-size:21px;font-family:宋体">联系电话：</span><span style="font-size:21px">13702379166</span></p><p style="text-align:center"><span style=";font-family:微软雅黑;font-size:16px"><span style="font-family:微软雅黑"></span></span><br></p><p style="text-align: center;"><img src="img/zhouzhuan1.jpg" style="width: 500px; height: 333px;" title="专业码头周转车轮翻新" width="500" height="333" border="0" vspace="0" alt="专业码头周转车轮翻新"></p><p style="text-align: center;"><img src="img/zhouzhuan2.jpg"  style="width: 500px; height: 333px;" title="专业码头周转车轮翻新" width="500" height="333" border="0" vspace="0" alt="专业码头周转车轮翻新"></p><p style="text-align: center;"><img src="img/zhouzhuan3.jpg"  style="width: 500px; height: 333px;" title="专业码头周转车轮翻新" width="500" height="333" border="0" vspace="0" alt="专业码头周转车轮翻新"></p><p style="text-align: center;"><img src="img/zhouzhuan4.jpg"  style="width: 500px; height: 333px;" title="专业码头周转车轮翻新" width="500" height="333" border="0" vspace="0" alt="专业码头周转车轮翻新"></p><p><br></p><p>
+        </p></div>
+
+        <div ng-show="productType=='yunshu'" id="pro_content">
+            <p></p><p style="text-align: center;"><br></p><p style="text-align:center"><span style=";font-family:Tahoma;font-size:21px"><span style="font-family:微软雅黑">专业运输车队轮胎翻新加工</span></span></p><p><span style=";font-family:微软雅黑;font-size:21px">&nbsp;&nbsp;</span><span style=";font-family:微软雅黑;font-size:16px"><span style="font-family:微软雅黑">鸿途轮胎翻新加工厂专业为运输车队翻新加工</span></span></p><p><span style=";font-family:微软雅黑;font-size:16px">&nbsp;&nbsp;&nbsp;<span style="font-family:微软雅黑">运输车队都是天天跑，好路乱路都要跑，用胎次数也很多，而且目前国家对于超载也捉的很严，用新轮胎成本也高，我们专业为运输车辆的轮胎翻新加工，是很好的选择。</span></span></p><p><br></p><p style="text-align: center;"><img src="img/yunshu.jpg" title="专业运输车队轮胎翻新加工" alt="专业运输车队轮胎翻新加工" width="500" height="318" border="0" vspace="0" style="width: 500px; height: 318px;"></p><p>
+        </p></div>
+
+        <div ng-show="productType=='chache'" id="pro_content">
+            <p></p><p style="text-align:center"><span style=";font-family:Tahoma;font-size:21px"><span style="font-family:微软雅黑">专业叉车</span></span><span style=";font-family:微软雅黑;font-size:21px"><span style="font-family:微软雅黑">、</span></span><span style=";font-family:Tahoma;font-size:21px"><span style="font-family:微软雅黑">堆高机专业轮胎翻新加工</span></span></p><p><span style=";font-family:微软雅黑;font-size:21px">&nbsp;&nbsp;&nbsp;</span><span style=";font-family:微软雅黑;font-size:16px"><span style="font-family:微软雅黑">鸿途轮胎翻新加工厂专门为场内用叉车、堆高机开发了轮胎翻新技术，包括实心轮胎也能翻新。</span></span></p><p><span style=";font-family:微软雅黑;font-size:16px">&nbsp;&nbsp;&nbsp;<span style="font-family:微软雅黑">针对场内叉车、堆高机轮胎在场内使用前进速度慢，需要原地旋转等特点，我们专门选择了一种和原装胎花纹一致的大块花纹，利于其他在承压下有更大的接触地面的面积，使其能承受更大的重量。大块花也利于增加轮胎在原地转动时的耐磨指数，经几年的使用观察，叉车翻新加工轮胎是一个很好的为客户节省成本的方案，客户只需要花新胎</span>30%-50%<span style="font-family:微软雅黑">的价格，而使用率达到新胎的</span><span style="font-family:Tahoma">80%-90%</span><span style="font-family:微软雅黑">以上。特别是对于大公司，叉车数量的公司可以大量节省公司的生产成本，又可以减少废胎对地球的污染，是件利己利人的好事，更重要的是节省了地球上有限的资源，这比留下更多的钱给我们的后代更加重要。</span></span></p><p><br></p><p style="text-align: center;"><img src="img/chache1.jpg" style="width: 500px; height: 333px;" title="专业叉车、堆高机专业轮胎翻新加工" width="500" height="333" border="0" vspace="0" alt="专业叉车、堆高机专业轮胎翻新加工"></p><p style="text-align: center;"><img src="img/chache2.jpg" style="width: 500px; height: 333px;" title="专业叉车、堆高机专业轮胎翻新加工" width="500" height="333" border="0" vspace="0" alt="专业叉车、堆高机专业轮胎翻新加工"></p><p style="text-align: center;"><img src="img/chache3.jpg" style="width: 500px; height: 383px;" title="专业叉车、堆高机专业轮胎翻新加工" width="500" height="383" border="0" vspace="0" alt="专业叉车、堆高机专业轮胎翻新加工"></p><p><br></p><p>
+        </p></div>
+
+        <div ng-show="productType=='shachang'"  id="pro_content">
+            <p></p><p style="text-align:center"><span style=";font-family:Tahoma;font-size:21px"><span style="font-family:微软雅黑">工地</span></span><span style=";font-family:微软雅黑;font-size:21px">-</span><span style=";font-family:Tahoma;font-size:21px"><span style="font-family:微软雅黑">沙场</span></span><span style=";font-family:微软雅黑;font-size:21px">-</span><span style=";font-family:Tahoma;font-size:21px"><span style="font-family:微软雅黑">石场铲车轮胎翻新加工</span></span></p><p><span style=";font-family:微软雅黑;font-size:21px">&nbsp;&nbsp;&nbsp;</span><span style=";font-family:微软雅黑;font-size:16px"><span style="font-family:微软雅黑">沙场、石场专业铲车轮胎翻新加工</span></span></p><p><span style=";font-family:微软雅黑;font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:微软雅黑">针对沙场、石场、石场用的轮胎都是低速、多弯、来回走动、摩胎很快，新胎又贵，所以翻新加工的话可以省一半以上得到费用，是一个省钱、省心的好选择。</span></span></p><p><br></p><p style="text-align: center;"><img src="img/shachang.jpg" title="工地-沙场-石场铲车轮胎翻新加工" alt="工地-沙场-石场铲车轮胎翻新加工" width="500" height="343" border="0" vspace="0" style="width: 500px; height: 343px;"></p><p>
+        </p></div>
+
+
+        <div ng-show="productType=='feiji'"   id="pro_content">
+            <p></p><p style="text-align:center"><span style=";font-family:Tahoma;font-size:20px"><span style="font-family:微软雅黑">专业飞机场地勤车轮胎翻新加工</span></span></p><p style="text-align:center"><span style=";font-family:Tahoma;font-size:20px"><span style="font-family:微软雅黑">飞机场地勤车轮胎翻新加工</span></span></p><p><span style=";font-family:微软雅黑;font-size:20px">&nbsp;&nbsp;</span><span style=";font-family:微软雅黑;font-size:16px">&nbsp;<span style="font-family:微软雅黑">由于飞机场内车辆很多，而且是低速行驶，使用率很高，用的轮胎也很多。对地球资源浪费也很大，也增加机场成本。我们也专业开发针对飞机场内地勤车的轮胎翻新加工，可以很好的利用飞机场内地勤的旧胎。一为机场运营降低成本，也为我们的子孙节省了资源，是一件值得我们每个地球的人去做的好事，让我们一起把地球的资源去合理利用，减少地球的污染，为后代多留一块净土，多留一块资源，这不是一件钱能做到的事！</span></span></p><p style="text-align: center;"><img src="img/feiji4.jpg" style="width: 500px; height: 315px;" title="专业飞机场地勤车轮胎翻新加工" width="500" height="315" border="0" vspace="0" alt="专业飞机场地勤车轮胎翻新加工"></p><p style="text-align: center;"><img src="img/feiji3.jpg" style="width: 500px; height: 333px;" title="专业飞机场地勤车轮胎翻新加工" width="500" height="333" border="0" vspace="0" alt="专业飞机场地勤车轮胎翻新加工"></p><p style="text-align: center;"><img src="img/feiji1.jpg" style="width: 500px; height: 750px;" title="专业飞机场地勤车轮胎翻新加工" width="500" height="750" border="0" vspace="0" alt="专业飞机场地勤车轮胎翻新加工"></p><p style="text-align: center;"><img src="img/feiji2.jpg" style="width: 500px; height: 333px;" title="专业飞机场地勤车轮胎翻新加工" width="500" height="333" border="0" vspace="0" alt="专业飞机场地勤车轮胎翻新加工"></p><p><br></p><p>
+        </p></div>
+
+
+        <div ng-show="productType=='huanwei'"  id="pro_content">
+            <p></p><p style="text-align:center"><span style=";font-family:Tahoma;font-size:20px"><span style="font-family:微软雅黑">专业环卫车轮胎翻新加工</span></span></p><p style="text-align:center"><span style=";font-family:Tahoma;font-size:20px"><span style="font-family:微软雅黑">环卫车专业轮胎翻新加工</span></span></p><p><span style=";font-family:微软雅黑;font-size:20px">&nbsp;&nbsp;&nbsp;</span><span style=";font-family:微软雅黑;font-size:16px"><span style="font-family:微软雅黑">环卫车辆的路面是在水泥地面式，在山上泥泞路面上行驶。而且地面会有许多垃圾，其中夹杂块、铁钉、玻璃碴，容易刺穿胎体。故建议使用钢丝胎较好，不易被刺穿，而且用新胎也被刺穿的话，就浪费了。如果是翻新胎可以大大减少成本，而且在翻新加工时我们会帮客人免费修补刺穿的地方，不会另外增加成本，对环卫公司是很好的选择。</span></span></p><p><span style=";font-family:微软雅黑;font-size:16px">&nbsp;&nbsp;&nbsp;<span style="font-family:微软雅黑">对于长期出入泥泞、垃圾场的车辆，我们会选用大块花纹（是指胎块较大、较厚的花纹），可以减少被刺穿的机遇，从而减少车辆维修的次数，提高生产效率。</span></span></p><p style="text-align:center"><span style=";font-family:Tahoma;font-size:20px">&nbsp;</span></p><p style="text-align: center;"><img src="img/huanwei1.jpg" style="width: 500px; height: 312px;" title="专业环卫车轮胎翻新加工" width="500" height="312" border="0" vspace="0" alt="专业环卫车轮胎翻新加工"></p><p style="text-align: center;"><img src="img/huanwei2.jpg"  style="width: 500px; height: 333px;" title="专业环卫车轮胎翻新加工" width="500" height="333" border="0" vspace="0" alt="专业环卫车轮胎翻新加工"></p><p style="text-align: center;"><img src="img/huanwei3.jpg"  style="width: 500px; height: 333px;" title="专业环卫车轮胎翻新加工" width="500" height="333" border="0" vspace="0" alt="专业环卫车轮胎翻新加工"></p><p style="text-align: center;"><img src="img/huanwei4.jpg" style="width: 500px; height: 333px;" title="专业环卫车轮胎翻新加工" width="500" height="333" border="0" vspace="0" alt="专业环卫车轮胎翻新加工"></p><p style="text-align: center;"><img src="img/huanwei7.jpg"  style="width: 500px; height: 333px;" title="专业环卫车轮胎翻新加工" width="500" height="333" border="0" vspace="0" alt="专业环卫车轮胎翻新加工"></p><p style="text-align: center;"><img src="img/huanwei5.jpg"  style="width: 500px; height: 750px;" title="专业环卫车轮胎翻新加工" width="500" height="750" border="0" vspace="0" alt="专业环卫车轮胎翻新加工"></p><p style="text-align: center;"><img src="img/huanwei6.jpg"  style="width: 500px; height: 333px;" title="专业环卫车轮胎翻新加工" width="500" height="333" border="0" vspace="0" alt="专业环卫车轮胎翻新加工"></p><p><br></p><p>
+        </p></div>
+
+        <div ng-show="productType=='buliu'" id="pro_content">
+            <p class="pro-title">专业轮胎火补硫化加工</p><img src="img/buliu.jpg" alt=""></div>
+        <div id="down">
+        </div>
+    </div>
+</div>
