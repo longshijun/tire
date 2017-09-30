@@ -19,8 +19,12 @@
             width: 100%;
             height: 35px;
             line-height: 35px;
-            background: #379be9;
-            border-bottom: 1px solid #379be9;
+            background: #b6dff3;
+            background: -webkit-linear-gradient(left, #b6dff3, #23ff3c);
+            background: -o-linear-gradient(right,  #23ff3c, #b6dff3);
+            background: -moz-linear-gradient(right, #23ff3c, #b6dff3);
+            background: linear-gradient(to right, #ccff10, #5df372);
+            border-bottom: 1px solid #acf1ae;
 
         }
         #top-con {
@@ -75,13 +79,19 @@
         }
         #nav li a {
             display: inline-block;
-            padding: 0 30px;
+            padding: 0 30px ;
             height: 45px;
+            text-decoration: none;
             line-height: 45px;
             color: #575757;
             font-size: 15px;
+            transition: all 0.5s;
         }
+        #nav li a:hover, #nav li a:focus {
+            color: #2dff7f;
+            padding: 0 40px 10px;
 
+        }
 
         #nav li a:focus,  #nav li a:hover{
             color: #44aa94;
@@ -173,6 +183,10 @@
             width: 1200px;
             height: 44px;
             line-height: 44px;
+            background: -webkit-linear-gradient(left, rgba(255,0,0,0), rgba(0,255,255,1)); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(right, rgba(255,0,0,0), rgba(0,255,255,1)); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(right, rgba(255,0,0,0), rgba(0,255,255,1)); /* Firefox 3.6 - 15 */
+            background: linear-gradient(to right, rgba(255,0,0,0), rgba(0,255,255,1)); /* 标准的语法（必须放在最后） */
         }
         #index_pro_tl {
             /* margin: 0 20px; */
@@ -294,6 +308,7 @@
         }
         .mycolor{
             color:#44aa94!important;
+            border-bottom: 2px solid #44aa94;
         }
         #index_pro_list li a{
             color: #575757;
@@ -367,9 +382,21 @@
             width: 384px;
             height: 270px;
             background-color: white;
+            transition: all 0.5s;
+            box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        #index_cus_con:hover,   #index_cus_con:focus{
+            width: 390px;
+            height: 270px;
         }
         #index_cus_con img {
             padding: 2px;
+            padding-left: 5px;
+            transition: all 0.5s;
+        }
+        #index_cus_con img:hover,  #index_cus_con img:focus{
+            padding-left: 10px;
         }
         #index_cus_con h3 {
             margin: 0;
@@ -414,17 +441,28 @@
         #index_about_bg {
             clear: both;
             width: 100%;
-            background-color: white;
+            opacity: 0.8;
+
+            background: -webkit-linear-gradient(left top, #b8b8b8, #b4ff9c);
+            background: -o-linear-gradient(bottom right, #c3c3c3, #a2c3ff);
+            background: -moz-linear-gradient(bottom right,#c3c3c3, #a2c3ff);
+            background: linear-gradient(to bottom right, #c3c3c3, #a2c3ff);
         }
         #index_about_con {
             clear: both;
             margin: 0 auto;
             width: 1200px;
+           /* opacity: 0.8;
+            background: -webkit-linear-gradient(left top, #b8b8b8, #b4ff9c);
+            background: -o-linear-gradient(bottom right, #c3c3c3, #a2c3ff);
+            background: -moz-linear-gradient(bottom right,#c3c3c3, #a2c3ff);
+            background: linear-gradient(to bottom right, #c3c3c3, #a2c3ff);*/
         }
         #index_about_con span {
             /* float: left; */
             width: 900px;
-            margin: 10px 0 0 20px;
+            margin: 10px 0 0 10px;
+
         }
 
         #boot {
