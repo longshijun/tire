@@ -63,6 +63,9 @@ app.directive('customer', [function(){
 app.directive('product', [function(){
     return {
         restrict:'ACE',
+        scope:{
+            productType:'='
+        },
         templateUrl:'js/module/product-show.html',
         controller:['$scope', function($scope){
             $scope.back = function(){

@@ -1,4 +1,4 @@
-<!--    <a title="为客户加工各种车辆轮胎翻新加工、定制，市场全新轮胎质量不三包，我们的翻新轮胎为您终身三包，绝无后顾之忧！只要30%的加工费，就给您80%的行驶里程保障。全国免费热线电话：400-831-0760" alt="为客户加工各种车辆轮胎翻新加工、定制，市场全新轮胎质量不三包，我们的翻新轮胎为您终身三包，绝无后顾之忧！只要30%的加工费，就给您80%的行驶里程保障。全国免费热线电话：400-831-0760">
+<!--    <a title="为客户加工各种车辆轮胎翻新加工、定制，市场全新轮胎质量不三包，我们的翻新轮胎为您终身三包，绝无后顾之忧！只要30%的加工费，就给您80%的行驶里程保障。全国免费热线电话：137-0237-9166" alt="为客户加工各种车辆轮胎翻新加工、定制，市场全新轮胎质量不三包，我们的翻新轮胎为您终身三包，绝无后顾之忧！只要30%的加工费，就给您80%的行驶里程保障。全国免费热线电话：137-0237-9166">
         <div id="banner">
 
         </div>
@@ -7,19 +7,21 @@
     <div id="top">
         <div id="top-con">
             <div  style="font-size: 15px" class="t-left t14">欢迎来到：中山市三乡镇鸿途轮胎加工厂</div>
-            <div  style="font-size: 15px"  class="t-right t14">全国免费热线：400-831-0760<span></span></div>
+            <div  style="font-size: 15px"  class="t-right t14">全国免费热线：137-0237-9166<span></span></div>
         </div>
     </div>
     <div id="nav-bg">
         <div id="nav">
             <ul>
-                <li  ng-click="tabPage = 'home'"  ><a ng-class="{'mycolor': tabPage == 'home'}">首页</a></li>
-                <li  ng-click="tabPage = 'product'" ><a ng-class="{'mycolor': tabPage == 'product'}">产品展示</a></li>
-                <li ng-click="tabPage = 'product-flow'" ><a ng-class="{'mycolor': tabPage == 'product-flow'}">生产工艺展示</a></li>
-                <li  ng-click="tabPage = 'customer'" ><a ng-class="{'mycolor': tabPage == 'customer'}" >客户的见证</a></li>
-                <li ng-click="tabPage = 'advantage'" ><a ng-class="{'mycolor': tabPage == 'advantage'}">我们的优势</a></li>
-                <li ng-click="tabPage = 'honor'"    ><a ng-class="{'mycolor': tabPage == 'honor'}" >公司荣誉</a></li>
-                <li ng-click="tabPage = 'contact'" ><a ng-class="{'mycolor': tabPage == 'contact'}">联系我们</a></li>
+                <li  ng-click="tabPage = 'home';productType = 'common'"  ><a ng-class="{'mycolor': tabPage == 'home'}">首页</a></li>
+                <li  ng-click="tabPage = 'product'; productType = 'common'" ><a ng-class="{'mycolor': tabPage == 'product'}">产品展示</a></li>
+                <li  ng-click="tabPage = 'product'; productType='gongjiao'" ><a  href="#pro_content" ng-class="{'mycolor': productType == 'gongjiao'}">公交车轮胎翻新</a></li>
+                <li  ng-click="tabPage = 'product'; productType='huoche'" ><a  href="#pro_content" ng-class="{'mycolor': productType == 'huoche'}">货柜车轮胎翻新</a></li>
+                <li ng-click="tabPage = 'product-flow';productType = 'common'"; ><a ng-class="{'mycolor': tabPage == 'product-flow'}">生产工艺展示</a></li>
+                <li  ng-click="tabPage = 'customer'; productType = 'common'" ><a ng-class="{'mycolor': tabPage == 'customer'}" >客户的见证</a></li>
+                <li ng-click="tabPage = 'advantage'; productType = 'common'" ><a ng-class="{'mycolor': tabPage == 'advantage'}">我们的优势</a></li>
+                <li ng-click="tabPage = 'honor'; productType = 'common'"    ><a ng-class="{'mycolor': tabPage == 'honor'}" >公司荣誉</a></li>
+                <li ng-click="tabPage = 'contact'; productType = 'common'" ><a ng-class="{'mycolor': tabPage == 'contact'}">联系我们</a></li>
 
             </ul>
         </div>
@@ -28,7 +30,7 @@
 
     <home ng-show="tabPage=='home'"></home>
     <customer ng-show="tabPage=='customer'"></customer>
-    <product ng-show="tabPage=='product'"></product>
+    <product product-type="productType" ng-show="tabPage=='product'"></product>
     <product-flow ng-show="tabPage == 'product-flow'"></product-flow>
     <honor ng-show="tabPage == 'honor'"></honor>
     <contact ng-show="tabPage == 'contact'"></contact>
@@ -53,7 +55,7 @@
 
             <p style="font-size: 16px">版权所属 Copyright(C)2016 中山市三乡镇鸿途轮胎加工厂  .All Rights Reserved.</p>
 
-            <p style="font-size: 16px">联系地址：广东省中山市神湾镇南沙大道光辉路7号 电 话：400-831-0760  邮 箱：3102145301@qq.com <a href="http://www.miitbeian.gov.cn">备案号：粤ICP备16045601号</a></p>
+            <p style="font-size: 16px">联系地址：广东省中山市神湾镇南沙大道光辉路7号 电 话：137-0237-9166  邮 箱：3102145301@qq.com <a href="http://www.miitbeian.gov.cn">备案号：粤ICP备16045601号</a></p>
 
         </div></div>
 </div>
